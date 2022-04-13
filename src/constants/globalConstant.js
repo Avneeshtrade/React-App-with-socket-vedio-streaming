@@ -1,0 +1,1 @@
+export const HOST_URL = "http://3847-171-60-178-107.ngrok.io";
