@@ -1,0 +1,103 @@
+.pagination > li {
+    display: inline-block;
+    padding-left: 0;
+  }
+  .pagination > li {
+    list-style: none;
+    border: 0.9px solid;
+    margin: 5px;
+  }
+  .pagination > li > a,
+  .pagination > li > span {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #2c689c;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+  }
+  
+  .pagination>li.active>a {
+    color: #fff;
+    background-color: hsl(133, 61%, 33%);
+    border-color: #1e7e34;
+  }
+  
+  /* Style the active class (and buttons on mouse-over) */
+  .pagination > li > a:hover {
+    background-color:  #218838;
+    color: white;
+  }
+  .pagination > li:first-child > a,
+  .pagination > li:first-child > span {
+    margin-left: 0;
+    padding: 6px!important;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    /* display: none!important; */
+  }
+  .pagination > li:last-child > a,
+  .pagination > li:last-child > span {
+    border-bottom-right-radius: 4px;
+    margin-right: 0;
+    padding: 6px!important;
+    border-top-right-radius: 4px;
+    /* display: none!important; */
+  }
+
+
+  
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 100%;
+  padding: 10px;
+}
+.row{
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+
+.classic {
+  background-position:
+    calc(30% - 20px) calc(1em + 2px),
+    calc(30% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 15px,
+    5px 15px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  width:20%;
+  position: relative;
+  right:40%;
+}
+
+.classic:focus {
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    10px 5px,
+    10px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

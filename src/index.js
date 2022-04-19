@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ErrorBoundary from './component/ErrorBoundary';
+import { AuthProvider } from './store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorBoundary>
-      <App />
-    </ErrorBoundary>
+    <AuthProvider>
+      <ErrorBoundary>
+        <App />
+      </ErrorBoundary>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

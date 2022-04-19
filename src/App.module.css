@@ -2,20 +2,20 @@
   text-align: center;
 }
 
-.App-logo {
+.AppLogo {
   height: 10vmin;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .AppLogo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-.App-header li{
+.AppHeader li{
   margin-left: 1vw;
 }
-.App-header {
+.AppHeader {
   background-color: #282c34;
   min-height: 10vh;
   display: flex;
@@ -26,7 +26,7 @@
   color: white;
 }
 
-.App-link {
+.AppLink {
   color: #61dafb;
 }
 
@@ -40,20 +40,20 @@
 }
 
 
-.app-header {
+.AppHeader {
   padding: 10px;
   background-color: #282c34;
   color: white;
 }
 
-.app-header > div {
+.AppHeader > div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-.chat-container {
+.ChatContainer {
   display: flex;
   flex-direction: column;
   align-items: center;

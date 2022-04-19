@@ -1,20 +1,22 @@
-import React, { useEffect } from 'react';
-import { useHistory } from 'react-router';
-import { clearToken } from '../utilities/clearToken';
-import { getToken } from '../utilities/getToken';
+import React from 'react'
+import { useAuthState } from '../store'
+import styles from './style/dashboard.module.css'
+ 
+function Dashboard(props) {
+    
+    const userDetails = useAuthState()
 
-function Home({setState}) {
-    const history = useHistory()
-    useEffect(()=>{
-        if(!getToken()){
-            history.push('/login')
-        }
-        
-    })
-    return <div>
-        <h1>Welcome to the world of Geeks!</h1>
-        <button onClick={()=>{clearToken(); history.push('/login')}}>Logout</button>
-    </div>
+    return (
+        <div style={{ padding: 10 }}>
+            <div className={styles.dashboardPage} >
+                <h1>
+                    Dashboard
+                </h1>
+               
+            </div>
+            <p>Welcome {userDetails.user && userDetails.user.email}</p>
+        </div>
+    )
 }
-
-export default Home;
+ 
+export default Dashboard
